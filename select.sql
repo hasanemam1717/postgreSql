@@ -69,7 +69,11 @@ SELECT max(length(name)) FROM student
 
 
 SELECT * FROM student 
- WHERE NOT country = 'USA'
+--  WHERE NOT country = 'USA'
+-- WHERE country = 'USA' OR country = 'Mexico'
+-- WHERE country IN ('USA','Mexico')
+WHERE country NOT IN ('USA','Mexico')
+
 
  SELECT * FROM student 
 --  WHERE grade IS NOT NULL
