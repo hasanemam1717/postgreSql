@@ -74,3 +74,5 @@ SELECT * FROM student
  SELECT * FROM student 
 --  WHERE grade IS NOT NULL
  WHERE grade IS  NULL
+
+ SELECT COALESCE (blood_group,'Blood group not provided') FROM student
