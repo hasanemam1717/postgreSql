@@ -72,7 +72,7 @@ SELECT * FROM student
 --  WHERE NOT country = 'USA'
 -- WHERE country = 'USA' OR country = 'Mexico'
 -- WHERE country IN ('USA','Mexico')
-WHERE country NOT IN ('USA','Mexico')
+WHERE country NOT IN ('USA','Mexico') LIMIT 1
 
 
  SELECT * FROM student 
@@ -90,3 +90,5 @@ WHERE country NOT IN ('USA','Mexico')
   WHERE name LIKE '__a'
 --   case not insensitive ilike
   WHERE name ILIKE '__a'
+
+  SELECT * FROM student LIMIT 5 OFFSET 2
