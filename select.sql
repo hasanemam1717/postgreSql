@@ -92,3 +92,5 @@ WHERE country NOT IN ('USA','Mexico') LIMIT 1
   WHERE name ILIKE '__a'
 
   SELECT * FROM student LIMIT 5 OFFSET 2
+
+  DELETE FROM student WHERE grade = 'B'
