@@ -80,3 +80,13 @@ WHERE country NOT IN ('USA','Mexico')
  WHERE grade IS  NULL
 
  SELECT COALESCE (blood_group,'Blood group not provided') FROM student
+
+ SELECT * FROM student WHERE age BETWEEN 19 and 22
+
+ SELECT * FROM student 
+--  case sensitive like
+--   WHERE name LIKE '%a'
+--   WHERE name LIKE '__a%'
+  WHERE name LIKE '__a'
+--   case not insensitive ilike
+  WHERE name ILIKE '__a'
