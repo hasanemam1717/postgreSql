@@ -94,3 +94,8 @@ WHERE country NOT IN ('USA','Mexico') LIMIT 1
   SELECT * FROM student LIMIT 5 OFFSET 2
 
   DELETE FROM student WHERE grade = 'B'
+
+  UPDATE student 
+  SET grade = 'B+' WHERE student_id = 21
+
+  SELECT * FROM student
