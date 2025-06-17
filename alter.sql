@@ -8,7 +8,7 @@ ALTER TABLE person_2
 -- delete column
 DROP COLUMN email
 
--- rename column
+-- rename column 
 ALTER TABLE person_2
 RENAME COLUMN age to user_age
 
